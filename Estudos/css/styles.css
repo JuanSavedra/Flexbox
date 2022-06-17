@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+#app {
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+
+    /* Flex Direction
+    flex-direction: row;  //Em linha (Default) 
+    flex-direction: row-reverse;  //Linha de trás pra frente 
+    flex-direction: column;  //Transforma em colunas 
+    flex-direction: column-reverse; //Coluna de baixo pra cima 
+    */
+}
+
 .box {
     width: 60px;
     height: 60px;
