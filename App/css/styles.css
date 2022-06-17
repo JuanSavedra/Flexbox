@@ -5,12 +5,111 @@
 }
 
 :root {
-    --backgroundColor: #e6ecf0;
+    --background: #e6ecf0;
+    --textColor: #667580;
+    --backgroundButton: #3bb9e3;
+    --backgroundInput: #f5f8fa;
+    --borderInput: #e6ecf0;
 }
 
+/* Body */
 body {
-    background-color: var(--backgroundColor);
+    background-color: var(--background);
     font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Nav */
+header#main-header {
+    height: 46px;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+header#main-header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header#main-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header#main-header nav ul li {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: var(--textColor);
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+header#main-header nav ul li:first-child {
+    margin: 0;
+}
+
+header#main-header nav ul li img  {
+    margin-right: 7px;
+}
+/* ======================================== */
+
+/* Side */
+header#main-header div.side {
+    display: flex;
+}
+
+header#main-header div.side input {
+    width: 220px;
+    background: var(--backgroundInput);
+    border: 1px solid var(--borderInput);
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 16px;
+    font-size: 12px;
+}
+
+header#main-header div.side img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+header#main-header div.side button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 90px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+    color: #ffffff;
+    border-radius: 16px;
+    background-color: var(--backgroundButton);
+}
+
+/* ======================================== */
+
+.logo {
+    width: 20px;
+}
+
+.icons {
+    width: 16px;
 }
