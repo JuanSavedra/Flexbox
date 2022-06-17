@@ -12,7 +12,6 @@ body,
 
 #app {
     display: flex;
-    flex-wrap: wrap;
 
     /* Flex Direction
     flex-direction: row;  //Em linha (Default) 
@@ -65,9 +64,32 @@ body,
     */
 }
 
-.box {
+.box-red {
     width: 150px;
     height: 60px;
     background: #F00;
     margin: 5px;
+    order: 2;
 }
+
+.box-green {
+    width: 150px;
+    height: 60px;
+    background: #0F0;
+    margin: 5px;
+    order: 1;
+}
+
+.box-blue {
+    width: 150px;
+    height: 60px;
+    background: #00F;
+    margin: 5px;
+    order: 0;
+}
+
+/* Order - Ordena os items de acordo com os números 
+order: 0 - Primeira posição
+order: 1 - Segunda posição
+order: 3 - Terceira posição
+*/
