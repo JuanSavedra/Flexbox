@@ -7,10 +7,11 @@
 :root {
     --background: #e6ecf0;
     --textColor: #667580;
-    --backgroundButton: #3bb9e3;
+    --smoothBlue: #3bb9e3;
     --backgroundInput: #f5f8fa;
     --borderInput: #e6ecf0;
     --backgroundBanner: #3bb9e3;
+    --textTitleColor: #1f2226;
 }
 
 /* Body */
@@ -106,7 +107,7 @@ header#main-header div.side button {
     border: 0;
     color: #ffffff;
     border-radius: 16px;
-    background-color: var(--backgroundButton);
+    background-color: var(--smoothBlue);
 }
 /* ======================================== */
 
@@ -159,7 +160,7 @@ div.bar .content ul li.active::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: var(--backgroundButton);
+    background: var(--smoothBlue);
 }
 
 div.bar .content ul li span {
@@ -176,7 +177,7 @@ div.bar .content ul li strong {
 }
 
 div.bar .content ul li.active strong {
-    color: var(--backgroundButton);
+    color: var(--smoothBlue);
 }
 
 div.bar .content .actions {
@@ -191,11 +192,119 @@ div.bar .content .actions a {
     width: 90px;
     font-weight: bold;
     font-size: 14px;
-    color: var(--backgroundButton);
-    border: 1px solid var(--backgroundButton);
+    color: var(--smoothBlue);
+    border: 1px solid var(--smoothBlue);
     border-radius: 16px;
     text-decoration: none;
     margin-right: 20px;
+}
+/* ======================================== */
+
+/* Profile */
+div.wrapper-content {
+    display: flex;
+}
+
+div.wrapper-content aside.profile {
+    width: 260px;
+}
+
+div.wrapper-content aside.profile img.avatar {
+    width: 200px;
+    height: 200px;
+    border: 5px, solid #ffffff;
+    margin-top: -140px;
+}
+
+div.wrapper-content aside.profile h1 {
+    font-size: 21px;
+    color: var(--textTitleColor);
+    margin-top: 10px;
+}
+
+div.wrapper-content aside.profile span {
+    font-size: 14px;
+    color: var(--textTitleColor);
+}
+
+div.wrapper-content aside.profile p {
+    font-size: 14px;
+    color: var(--textTitleColor);
+    margin-top: 15px;
+}
+
+div.wrapper-content aside.profile ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+div.wrapper-content aside.profile ul.list li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--textColor);
+    margin-top: 5px;
+}
+
+div.wrapper-content aside.profile ul.list li:first-child {
+    margin-top: 0;
+}
+
+div.wrapper-content aside.profile ul.list li a {
+    color: var(--smoothBlue);
+    text-decoration: none;
+}
+
+div.wrapper-content aside.profile ul li img {
+    margin-right: 5px;
+}
+
+div.wrapper-content aside.profile .widget {
+    margin-top: 20px;
+}
+
+div.wrapper-content aside.profile .widget strong {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--smoothBlue);
+}
+
+div.wrapper-content aside.profile .widget img {
+    margin-right: 5px;
+}
+
+div.wrapper-content aside.profile .followers ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+div.wrapper-content aside.profile .followers ul li img {
+    width: 45px;
+    height: 45px;
+    flex: 1 0 auto;
+    margin-right: 5px;
+    margin: 0 5px 5px 0;
+}
+
+div.wrapper-content aside.profile .images ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+div.wrapper-content aside.profile .images ul li img {
+    width: 80px;
+    height: 80px;
+    flex: 1 0 auto;
+    margin-right: 5px;
+    margin: 0 5px 5px 0;
 }
 /* ======================================== */
 
