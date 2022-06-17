@@ -12,10 +12,7 @@ body,
 
 #app {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex: 1;
+    flex-wrap: wrap;
 
     /* Flex Direction
     flex-direction: row;  //Em linha (Default) 
@@ -50,10 +47,26 @@ body,
     /* Flex - Combina o flex-grow e o flex-shrink
     flex: 1 0;
     */
+
+    /* Flex Wrap - Faz a quebra de linhas de um elemento
+    flex-wrap: nowrap; //Não quebra a linha (default)
+    flex-wrap: wrap; //Quebra as linhas em ordem
+    flex-wrap: wrap-reverse; //Inverte a posição das linhas quebradas
+    */
+
+    /* Align Content - Responsável por alinhar o conteúdo 
+    quando ocorre quebra de linhas
+    align-content: center; //Centro
+    align-content: flex-start; //Início
+    align-content: flex-end; //Final
+    align-content: space-between; //Espaçamento grande
+    align-content: space-around; //Espaçamento médio
+    align-content: space-evenly; //Espaçamento pequeno
+    */
 }
 
 .box {
-    width: 60px;
+    width: 150px;
     height: 60px;
     background: #F00;
     margin: 5px;
