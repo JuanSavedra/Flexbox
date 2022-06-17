@@ -15,6 +15,7 @@ body,
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex: 1;
 
     /* Flex Direction
     flex-direction: row;  //Em linha (Default) 
@@ -24,18 +25,30 @@ body,
     */
 
     /* Align Items - Alinha verticalmente
-    align-items: center //Centro
-    align-items: flex-start //Início
-    align-items: flex-end //Final
+    align-items: center; //Centro
+    align-items: flex-start; //Início
+    align-items: flex-end; //Final
     */
 
     /* Justify Content - Alinha horizontalmente
-    justify-content: center //Centro
-    justify-content: flex-start //Início
-    justify-content: flex-end //Final
-    justify-content: space-between //Espaçamento grande
-    justify-content: space-around //Espaçamento médio
-    justify-content: space-evenly //Espaçamento pequeno
+    justify-content: center; //Centro
+    justify-content: flex-start; //Início
+    justify-content: flex-end; //Final
+    justify-content: space-between; //Espaçamento grande
+    justify-content: space-around; //Espaçamento médio
+    justify-content: space-evenly; //Espaçamento pequeno
+    */
+
+    /* Flex-grow - Permite o redimensionamento
+    flex-grow: 1;
+    */
+
+    /* Flex-shrink - Não permite o redimensionamento
+    flex-shrink: 0; (1 vem como padrão) 
+    */
+
+    /* Flex - Combina o flex-grow e o flex-shrink
+    flex: 1 0;
     */
 }
 
