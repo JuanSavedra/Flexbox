@@ -5,20 +5,18 @@
 }
 
 :root {
-    --background: #e6ecf0;
-    --lightGrey: #9a9a9a;
-    --textColor: #667580;
-    --smoothBlue: #3bb9e3;
-    --backgroundInput: #f5f8fa;
-    --borderInput: #e6ecf0;
-    --backgroundBanner: #3bb9e3;
-    --textTitleColor: #1f2226;
-    --darkGrey: #222222;
+    --white200: #e6ecf0;
+    --grey200: #9a9a9a;
+    --grey400: #667580;
+    --cyan100: #3bb9e3;
+    --white100: #f5f8fa;
+    --grey700: #1f2226;
+    --grey800: #222222;
 }
 
 /* Body */
 body {
-    background-color: var(--background);
+    background-color: var(--white200);
     font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
@@ -66,7 +64,7 @@ header#main-header nav ul li {
     display: flex;
     align-items: center;
     font-size: 13px;
-    color: var(--textColor);
+    color: var(--grey400);
     font-weight: bold;
     margin-left: 30px;
 }
@@ -87,8 +85,8 @@ header#main-header div.side {
 
 header#main-header div.side input {
     width: 220px;
-    background: var(--backgroundInput);
-    border: 1px solid var(--borderInput);
+    background: var(--white100);
+    border: 1px solid var(--white200);
     height: 34px;
     padding: 0 12px;
     border-radius: 16px;
@@ -113,7 +111,7 @@ header#main-header div.side button {
     border: 0;
     color: #ffffff;
     border-radius: 16px;
-    background-color: var(--smoothBlue);
+    background-color: var(--cyan100);
 }
 /* ======================================== */
 
@@ -121,7 +119,7 @@ header#main-header div.side button {
 div.banner {
     width: 100%;
     height: 380px;
-    background-color: var(--backgroundBanner);
+    background-color: var(--cyan100);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,20 +168,20 @@ div.bar .content ul li.active::after {
 }
 
 div.bar .content ul li span {
-    color: var(--textColor);
+    color: var(--grey400);
     font-size: 12px;
     font-weight: bold;
 }
 
 div.bar .content ul li strong {
-    color: var(--textColor);
+    color: var(--grey400);
     font-size: 18px;
     font-weight: bold;
     margin-top: 2px;
 }
 
 div.bar .content ul li.active strong {
-    color: var(--smoothBlue);
+    color: var(--cyan100);
 }
 
 div.bar .content .actions {
@@ -198,8 +196,8 @@ div.bar .content .actions a {
     width: 90px;
     font-weight: bold;
     font-size: 14px;
-    color: var(--smoothBlue);
-    border: 1px solid var(--smoothBlue);
+    color: var(--cyan100);
+    border: 1px solid var(--cyan100);
     border-radius: 16px;
     text-decoration: none;
     margin-right: 20px;
@@ -224,18 +222,18 @@ div.wrapper-content aside.profile img.avatar {
 
 div.wrapper-content aside.profile h1 {
     font-size: 21px;
-    color: var(--textTitleColor);
+    color: var(--grey700);
     margin-top: 10px;
 }
 
 div.wrapper-content aside.profile span {
     font-size: 14px;
-    color: var(--textTitleColor);
+    color: var(--grey700);
 }
 
 div.wrapper-content aside.profile p {
     font-size: 14px;
-    color: var(--textTitleColor);
+    color: var(--grey700);
     margin-top: 15px;
 }
 
@@ -248,7 +246,7 @@ div.wrapper-content aside.profile ul.list li {
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: var(--textColor);
+    color: var(--grey400);
     margin-top: 5px;
 }
 
@@ -257,7 +255,7 @@ div.wrapper-content aside.profile ul.list li:first-child {
 }
 
 div.wrapper-content aside.profile ul.list li a {
-    color: var(--smoothBlue);
+    color: var(--cyan100);
     text-decoration: none;
 }
 
@@ -274,7 +272,7 @@ div.wrapper-content aside.profile .widget strong {
     align-items: center;
     font-weight: bold;
     font-size: 14px;
-    color: var(--smoothBlue);
+    color: var(--cyan100);
 }
 
 div.wrapper-content aside.profile .widget img {
@@ -314,11 +312,103 @@ div.wrapper-content aside.profile .images ul li img {
 }
 /* ======================================== */
 
-/* Widgets */
+/* Timeline */
 div.wrapper-content .timeline {
     flex: 1;
+    background-color: #ffffff;
+    margin: 10px 20px 0 ;
 }
 
+div.wrapper-content .timeline nav {
+    border-bottom: 1px solid var(--white200);
+    padding: 10px 15px;
+}
+
+div.wrapper-content .timeline nav a {
+    text-decoration: none;
+    color: var(--cyan100);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child {
+    margin: 0;
+}
+
+div.wrapper-content .timeline nav a.active {
+    color: var(--grey800);
+}
+
+div.wrapper-content .timeline ul.tweets {
+    list-style: none;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+    border-bottom: 1px solid var(--white200);
+    padding: 10px 15px;
+    display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+    border-bottom: 1px solid var(--white200);
+    padding: 10px 15px;
+    display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets li > img {
+    width: 48px;
+    height: 48px;
+}
+
+div.wrapper-content .timeline ul.tweets li .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong {
+    font-size: 14px;
+    color: var(--grey800);
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--grey200);
+}
+
+div.wrapper-content .timeline ul.tweets li .info p {
+    font-size: 14px;
+    color: var(--grey800);
+    margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions {
+    display: flex;
+    margin-top: 20px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--grey400);
+    font-weight: bold;
+    font-size: 12px; 
+    margin-left: 30px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a:first-child {
+    margin-left: 0;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a img {
+    margin-right: 5px;
+}
+/* ======================================== */
+
+/* Widgets */
 div.wrapper-content aside.widgets {
     width: 290px;
     margin-top: 10px;
@@ -336,12 +426,12 @@ div.wrapper-content aside.widgets .widget .title {
 
 div.wrapper-content aside.widgets .widget .title strong {
     font-size: 18px;
-    color: var(--textTitleColor);
+    color: var(--grey700);
 }
 
 div.wrapper-content aside.widgets .widget .title a {
     font-size: 12px;
-    color: var(--smoothBlue);
+    color: var(--cyan100);
     text-decoration: none;
     position: relative;
     padding-left: 10px;
@@ -352,7 +442,7 @@ div.wrapper-content aside.widgets .widget .title a::before {
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background-color: var(--darkGrey);
+    background-color: var(--grey800);
     position: absolute;
     left: 0;
     left: 4px;
@@ -367,7 +457,7 @@ div.wrapper-content aside.widgets .follow ul {
 div.wrapper-content aside.widgets .follow ul li {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--borderInput);
+    border-bottom: 1px solid var(--white200);
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
@@ -396,12 +486,12 @@ div.wrapper-content aside.widgets .follow ul li .profile .info {
 
 div.wrapper-content aside.widgets .follow ul li .profile .info strong {
     font-size: 14px;
-    color: var(--textTitleColor);
+    color: var(--grey700);
 }
 
 div.wrapper-content aside.widgets .follow ul li .profile .info strong span {
     font-weight: normal;
-    color: var(--lightGrey);
+    color: var(--grey200);
 }
 
 div.wrapper-content aside.widgets .follow ul li .profile .info a {
@@ -412,8 +502,8 @@ div.wrapper-content aside.widgets .follow ul li .profile .info a {
     width: 90px;
     font-weight: bold;
     font-size: 14px;
-    color: var(--smoothBlue);
-    border: 1px solid var(--smoothBlue);
+    color: var(--cyan100);
+    border: 1px solid var(--cyan100);
     border-radius: 16px;
     text-decoration: none;
     margin-top: 4px;
@@ -426,7 +516,7 @@ div.wrapper-content aside.widgets .follow img {
 
 div.wrapper-content aside.widgets .follow span {
     font-size: 14px;
-    color: var(--smoothBlue);
+    color: var(--cyan100);
 }
 /* ======================================== */
 
