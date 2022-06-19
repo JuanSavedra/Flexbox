@@ -4,9 +4,8 @@ Estudos sobre flexbox.
 ## App
 ### Projeto com o intuito de aplicar os conhecimentos adquiridos estudando sobre flexbox, nesse projeto foi feito um "clone" da interface do twitter
 
-## Detalhes do projeto:
-
-### Contém no projeto
+## Detalhes do projeto
+### Contém
 - ✔️ Navbar.
 - ✔️ Header.
 - ✔️ Barra com informações do perfil: Tweets, Followings, Followers, Favorites, Lists e Moments. 
