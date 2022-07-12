@@ -6,12 +6,7 @@ Estudos sobre flexbox.
 
 ## Detalhes do projeto
 ### Contém
-- ✔️ Navbar.
-- ✔️ Header.
-- ✔️ Barra com informações do perfil: Tweets, Followings, Followers, Favorites, Lists e Moments. 
-- ✔️ Parte do perfil, junto com nome do usuário, descrição, seguidores e imagens.
-- ✔️ Timeline contendo os tweets fictícios.
-- ✔️ Sugestões de pessoas para seguir.
+- ✔️ Coisas padrões de uma página estática.
 
 ### Falta fazer
 -  ❗ Funcionalidades Javascript (como criar um tweet por exemplo).
